@@ -42,6 +42,7 @@ public class SessionController {
 	// Secret shared with our OpenVidu server
 	private String SECRET;
 
+	// OpenVidu-Server와  연결하기 위한 작업
 	public SessionController(@Value("${openvidu.secret}") String secret, @Value("${openvidu.url}") String openviduUrl) {
 		this.SECRET = secret;
 		this.OPENVIDU_URL = openviduUrl;
